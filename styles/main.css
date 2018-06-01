@@ -1,0 +1,448 @@
+@import "reset.css";
+
+/* END OF RESET STYLES */
+
+body {
+  font-family: sans-serif;
+  /* box-sizing: border-box; */
+
+  background-color: rgb(238, 237, 237);
+  padding-top: 3.6rem;
+}
+
+/* STYLES ADDED WITH ACTIONS: */
+
+.dim {
+  opacity: 0.5;
+}
+
+/* MAIN HEADER STYLES: */
+
+header {
+  position: fixed;
+  top: 0px;
+  z-index: 4;
+  width: 100%;
+  min-width: 1032px;
+  height: 3.5rem;
+  margin: auto;
+  color: white;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  background-color: rgba(1, 107, 228, 1);
+  border-bottom: 1px solid black;
+}
+
+header .profileIcon {
+  margin-right: 10%;
+  margin-top: 0.5rem;
+  float: right;
+  height: 3rem;
+  width: 3rem;
+  padding: 5px;
+  border-radius: 50%;
+  border: solid 1px gainsboro;
+}
+
+header .name {
+  float: right;
+  margin-right: 0.25rem;
+  margin-top: 1.9rem;
+}
+
+header h1 {
+  float: left;
+  margin-left: 10%;
+  margin-top: 1rem;
+  font-family: serif;
+  font-size: 2rem;
+}
+
+header nav {
+  width: 20rem;
+  margin: auto;
+  margin-top: 1.5rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+header form {
+  width: 11rem;
+  border: solid rgba(0, 0, 0, 0.63) 1px;
+  border-radius: 3px;
+  background-color: white;
+  padding: 0.01rem;
+  display: flex;
+}
+
+header .magnifyingGlass {
+  height: 1.2rem;
+  width: 1.2rem;
+  background-image: url("https://visualpharm.com/assets/717/Search-595b40b65ba036ed117d23c8.svg");
+  background-size: cover;
+  border: none;
+  border-left: dotted 1px gainsboro;
+  background-color: rgb(233, 233, 233);
+}
+
+header .magnifyingGlass:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+header form input {
+  border: none;
+  height: 1.2rem;
+  width: calc(100% - 1rem);
+}
+
+header .profileIcon img {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  border: solid black 1px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 100;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+
+header nav ul li {
+  padding: 0.25rem;
+}
+
+header nav ul li:nth-child(1) {
+  border-right: dotted rgb(154, 154, 154) 1px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+header nav ul a:hover {
+  color: rgb(43, 211, 230);
+}
+
+/* "MAIN" TAG STYLES */
+
+main {
+  width: 80%;
+  min-width: 850px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main section {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: solid 1px gainsboro;
+  background-color: white;
+}
+
+/* CONTENT HEADER STYLES */
+
+section.contentHeader {
+  width: 100%;
+  height: 15rem;
+}
+
+.contentHeader {
+  height: 20rem;
+  position: relative;
+  border: solid 1px gray;
+  border-radius: 3px;
+  width: 40%;
+  float: left;
+  background-image: url("../assets/cover.jpg");
+  background-size: cover;
+}
+
+.profileCover {
+  height: 11.5rem;
+}
+
+.contentHeader .name {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transform: translate(12.3rem, -0.5rem);
+}
+
+.profilePic {
+  z-index: 3;
+  transform: translate(1rem, 3rem);
+  border: solid 1px gray;
+  border-radius: 4px;
+  padding: 0.25rem;
+  background-color: white;
+}
+
+.profilePic img {
+  border: dotted rgb(221, 221, 221) 1px;
+}
+
+.profilePic img,
+.profilePic {
+  height: 9rem;
+  width: 10rem;
+}
+
+.profileNav {
+  background-color: rgb(255, 255, 255);
+  padding-left: 14rem;
+  width: calc(100% - 14rem);
+  height: 3.5rem;
+}
+
+ul#mainNav li {
+  list-style: none;
+  float: left;
+  padding: 1rem;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  border: solid 1px gray;
+  border-bottom: none;
+  border-top: none;
+}
+
+ul#mainNav li:nth-child(1) {
+  border-right: none;
+}
+
+ul#mainNav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+ul#mainNav a:hover {
+  color: blue;
+}
+
+.active,
+ul#mainNav a.active:hover {
+  color: rgb(138, 131, 131);
+  font-weight: 600;
+}
+
+/* SECTION HEADINGS: */
+
+main h3 {
+  background-color: rgba(216, 216, 216, 0.685);
+  padding: 1rem;
+  width: calc(100% - 2rem);
+}
+
+/* TOPIC STYLES */
+
+.flexWrap {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.topicWrap {
+  width: 9rem;
+  height: 11.5rem;
+  margin: 0.5rem;
+  border: solid rgb(207, 207, 207) 1px;
+}
+
+.topicWrap h4 {
+  color: rgba(69, 69, 216, 0.76);
+  font-weight: 600;
+  font-size: 0.75rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.thumbnail {
+  height: 9rem;
+  width: 9rem;
+}
+
+/* BIO AND MORE INFO SECTIONS */
+
+.bio,
+.info {
+  height: 20rem;
+  border-radius: 3px;
+  border: solid rgba(214, 214, 214, 0.815) 3px;
+}
+
+section.bio {
+  width: 64%;
+  float: left;
+  overflow: unset;
+}
+
+section.bio p {
+  padding: 1rem 1rem 1rem 1rem;
+  line-height: 1.4;
+}
+
+section.bio .textWrap {
+  overflow-y: scroll;
+  height: 16rem;
+}
+
+.info {
+  width: 33%;
+  float: right;
+}
+
+dl {
+  padding: 0rem 1.2rem 1.2rem 1.2rem;
+}
+
+dt {
+  font-weight: 700;
+  padding: 0.5rem 0rem 0.25rem 0rem;
+  line-height: 2rem;
+  color: rgb(100, 100, 104);
+}
+
+dd {
+  padding: 0rem 1rem 0rem 0.5rem;
+  color: rgb(81, 81, 190);
+}
+
+/* BACKGROUND IMAGES FOR INTERESTS: */
+
+.topic div#one {
+  background-image: url("https://www.pandotrip.com/wp-content/uploads/2015/07/Top-10-Kayaking-Maldives3-740x493.jpg");
+  background-size: cover;
+}
+
+.topic div#two {
+  background-image: url("https://c1.staticflickr.com/1/263/19726656648_1bda23e8a7_b.jpg");
+  background-size: cover;
+}
+.topic div#three {
+  background-image: url("http://nazaninde.ghost.io/content/images/2016/08/femalecodertocat-2.png");
+  background-size: cover;
+}
+
+.topic div#four {
+  background-image: url("https://i.ytimg.com/vi/nQjjHjcjzb0/hqdefault.jpg");
+  background-size: cover;
+}
+
+.topic div#five {
+  background-image: url("https://i.huffpost.com/gen/3135780/thumbs/o-SUMMER-READING-570.jpg?7");
+  background-size: cover;
+}
+
+.topic div#six {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/576dba13989899.5627b7add7307.png");
+  background-size: cover;
+}
+
+.topic div#seven {
+  background-image: url("http://is1.mzstatic.com/image/thumb/Music6/v4/0f/dc/31/0fdc3120-ac6f-e56d-d6e2-ab27967c2ce1/source/1200x630bb.jpg");
+  background-size: contain;
+}
+
+.topic div#eight {
+  background-image: url("http://www.newscaststudio.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-19-at-7.30.51-PM.png");
+  background-size: cover;
+}
+
+.topic div#nine {
+  background-image: url("http://images.amcnetworks.com/ifcfilms.com/wp-content/uploads/2014/04/Boyhood_HiRes_1.jpg");
+  background-size: cover;
+}
+
+.topic div#ten {
+  background-image: url("https://www.disneyclips.com/imagesnewb/images/poohpigletrunning.gif");
+  background-size: cover;
+}
+
+.topic div#eleven {
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/617v4W6CxbL.jpg");
+  background-size: cover;
+}
+
+/* GALLERY  SECTION STYLES*/
+
+.gallery h3 {
+  height: 1rem;
+}
+
+.gallery {
+  /* height: 10rem; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+.photoWrap {
+  /* flex-grow: 1; */
+  background-color: orange;
+  border: solid white 5px;
+  /* width: 33%;
+    height: calc(33% - 10px); */
+  width: 13rem;
+  height: 10rem;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.photoWrap img {
+  width: 100%;
+}
+
+/* SIDEBAR / SOCIAL MEDIA STYLES */
+
+.sidebar {
+  height: 8rem;
+  padding: 2rem 4rem 0rem 4rem;
+}
+
+.sidebar h4 {
+  float: right;
+  color: gainsboro;
+  font-weight: 400;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
+.socialButton {
+  border-radius: 3px;
+  width: 5rem;
+  height: 5rem;
+  float: right;
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+.socialButton:hover {
+  transform: scale(1.1);
+}
+
+/* FOOTER STYLES */
+
+footer {
+  height: 5rem;
+  width: 80%;
+  margin: auto;
+  padding: 1rem 1rem 0rem 1rem;
+  text-align: right;
+  color: darkgray;
+}
