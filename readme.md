@@ -1,4 +1,4 @@
-Foundations Assignement:
+Foundations Assignment:
 To create a profile page that links to a gallery with six images.
 Layout created with pure CSS floats and flexbox.
 Animations created with CSS transform property and vanilla JS.
